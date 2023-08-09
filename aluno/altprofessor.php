@@ -35,14 +35,14 @@
     $nome = $array_retorno['nome'];
     $idade = $array_retorno['idade'];
     $datanascimento = $array_retorno['datanascimento'];
+    $cpf = $array_retorno['cpf'];
     $endereco = $array_retorno['endereco'];
-    $estatus = $array_retorno['estatus'];
 
 
     ?>
 
 <div class="container">
-    <form method="POST" action="crudaluno.php">
+    <form method="POST" action="crudprofessor.php">
      
      <div class="meio">
 
@@ -56,9 +56,9 @@
 
         <h3>data de nascimento<input type="text" name="datanascimento" id="" value=<?php echo $datanascimento ?>></p>
 
-       <h3> endereço<input type="text" name="endereco" id="" value=<?php echo $endereco ?>></p>
+       <h3> endereço<input type="text" name="cpf" id="" value=<?php echo $cpf ?>></p>
 
-        <h3>Status<input type="text" name="estatus" id="" value=<?php echo $estatus ?>></p>
+        <h3>Status<input type="text" name="endereco" id="" value=<?php echo $endereco ?>></p>
 
 
         <input id="alterar" type="submit" name="update" value="Alterar">

@@ -5,19 +5,19 @@
  */
 require_once('conexao.php');
 
-$retorno = $conexao->prepare('SELECT * FROM aluno');
+$retorno = $conexao->prepare('SELECT * FROM professor');
 $retorno->execute();
 
 ?>
 <table>
     <thead>
         <tr>
-            <th>ID</th>
-            <th>NOME</th>
-            <th>IDADE</th>
-            <th>DATA NASCIMENTO</th>
-            <th>ENDERECO</th>
-            <th>MATRICULA</th>
+            <th>IDDISCIPLINA</th>
+            <th>DISCIPLINA</th>
+            <th>CH</th>
+            <th>SEMESTRE</th>
+            <th>IDPROFESSOR</th>
+    
         </tr>
     </thead>
 
@@ -26,14 +26,14 @@ $retorno->execute();
             <?php foreach ($retorno->fetchall() as $value) { ?>
         <tr>
             <td> <?php echo $value['id'] ?> </td>
-            <td> <?php echo $value['nomealuno'] ?> </td>
-            <td> <?php echo $value['idade'] ?> </td>
-            <td> <?php echo $value['nascimento'] ?> </td>
-            <td> <?php echo $value['ende'] ?> </td>
-            <td> <?php echo $value['matri'] ?> </td>
+            <td> <?php echo $value['iddisciplina'] ?> </td>
+            <td> <?php echo $value['disciplina'] ?> </td>
+            <td> <?php echo $value['ch'] ?> </td>
+            <td> <?php echo $value['semestre'] ?> </td>
+            <td> <?php echo $value['idprofessor'] ?> </td>
 
             <td>
-                <form method="POST" action="altaluno.php">
+                <form method="POST" action="altdisciplina.php">
                     <input name="id" type="hidden" value="<?php echo $value['id']; ?>" />
                     <button name="alterar" type="submit">Alterar</button>
                 </form>
@@ -41,7 +41,7 @@ $retorno->execute();
             </td>
 
             <td>
-                <form method="GET" action="crudaluno.php">
+                <form method="GET" action="cruddisciplina.php">
                     <input name="id" type="hidden" value="<?php echo $value['id']; ?>" />
                     <button name="excluir" type="submit">Excluir</button>
                 </form>

@@ -13,29 +13,30 @@
     <div class="container">
       
     <div class="form">
-        <form method="GET" action="crudaluno.php">
+        <form method="GET" action="crudprofessor.php">
             <div class="form-header">
                 <div class="title">
                     <h1>cadastre-se</h1>
                 </div>
                 <div class="login-button">
-                    <button><a href="#"><input type="submit" name="cadastrar" value="cadastrar"></a> </button>
+                    <button><a href="#"><input type="submit" name="cadastrar" value="cadastrar" required></a> </button>
                     
                 </div>
             </div>
 
             <div class="input-group">
                 <div class="input-box">
-                    <label for="">nome aluno</label>
+                    <label for="">nome professsor</label>
                     <input id="firstname" type="text" name="nome" placeholder="Digite seu primeiro nome" required>
                 </div>
+                
 
                 <div class="input-box">
                     <label for="">idade</label>
                     <input id="ida" type="text" name="idade" placeholder="Digite sua idade" required>
                 </div>
 
-               
+            
 
                 <div class="input-box">
                      <label for="">data nascimento</label>
@@ -43,16 +44,31 @@
                 </div>
 
                 <div class="input-box">
-                     <label for="">endereco</label>
-                     <input type="text" name=" endereco" placeholder="Digite seu endereço" required>
+                     <label for="">cpf</label>
+                     <input type="text" name="cpf" placeholder="Digite seu cpf" required>
                 </div>
 
-            
-               
-             
+                <div class="input-box">
+                    <label for="">endereco</label>
+                    <input type="text" name="endereco" placeholder="Digite seu endereco " required>
+                </div>
 
             </div>
-           
+            <div class="gender-inputs">
+                <div class="gender-title">
+                    <h6>Status</h6>
+                </div>
+            
+                <div class="gender-group">
+                    <div class="gender-input">
+                        <input id="cas" type="radio" name="casado">
+                        <label for="cas">Solteiro</label>
+                    </div>
+
+                    <div class="gender-input">
+                        <input id="solt" type="radio" name="solteiro">
+                        <label for="solt">Casado</label>
+                    </div>
                 </div>
             </div>
 

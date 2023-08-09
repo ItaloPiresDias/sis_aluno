@@ -13,10 +13,11 @@
     <div class="container">
       
     <div class="form">
-        <form method="GET" action="crudaluno.php">
+        <form method="GET" action="cruddisciplina.php">
             <div class="form-header">
                 <div class="title">
-                    <h1>cadastre-se</h1>
+                    <h1>cadastrar disciplina
+                    </h1>
                 </div>
                 <div class="login-button">
                     <button><a href="#"><input type="submit" name="cadastrar" value="cadastrar"></a> </button>
@@ -26,34 +27,34 @@
 
             <div class="input-group">
                 <div class="input-box">
-                    <label for="">nome aluno</label>
-                    <input id="firstname" type="text" name="nome" placeholder="Digite seu primeiro nome" required>
+                    <label for="">id disciplina</label>
+                    <input id="firstname" type="number" name="iddisciplina" placeholder="Digite o id da disciplina" required>
                 </div>
 
                 <div class="input-box">
-                    <label for="">idade</label>
-                    <input id="ida" type="text" name="idade" placeholder="Digite sua idade" required>
-                </div>
-
-               
-
-                <div class="input-box">
-                     <label for="">data nascimento</label>
-                     <input id="data" type="date" name=" datanascimento" placeholder="Digite sua data de nascimento" required>
+                    <label for="">disciplina</label>
+                    <input id="ida" type="text" name="disciplina" placeholder="disciplina" required>
                 </div>
 
                 <div class="input-box">
-                     <label for="">endereco</label>
-                     <input type="text" name=" endereco" placeholder="Digite seu endereço" required>
+                    <label for="">ch</label>
+                    <input id="ident" type="number" name=" ch" placeholder="CH da disciplina" required>
                 </div>
 
-            
-               
-             
+                <div class="input-box">
+                     <label for="">semestre</label>
+                     <input id="data" type="number" name="semestre" placeholder="Semestre" required>
+                </div>
+
+                <div class="input-box">
+                     <label for="">id do professor</label>
+                     <input type="text" name="idprofessor" placeholder="id do professor" required>
+                </div>
+
+                
 
             </div>
-           
-                </div>
+          
             </div>
 
             <div class="continue-button">
