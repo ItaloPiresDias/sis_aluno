@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>cadastro</title>
  
 </head>
@@ -19,7 +19,7 @@
                     <h1>cadastre-se</h1>
                 </div>
                 <div class="login-button">
-                    <button><a href="#"><input type="submit" name="cadastrar" value="cadastrar" required></a> </button>
+                    <button><input type="submit" name="" value="cadastrar" required></button>
                     
                 </div>
             </div>
@@ -53,6 +53,8 @@
                     <input type="text" name="endereco" placeholder="Digite seu endereco " required>
                 </div>
 
+                <input type="hidden" name="cadastrar" value="cadastrar" required>
+
             </div>
             <div class="gender-inputs">
                 <div class="gender-title">
@@ -61,19 +63,19 @@
             
                 <div class="gender-group">
                     <div class="gender-input">
-                        <input id="cas" type="radio" name="casado">
+                        <input id="cas" type="radio" value="0" name="estatus">
                         <label for="cas">Solteiro</label>
                     </div>
 
                     <div class="gender-input">
-                        <input id="solt" type="radio" name="solteiro">
+                        <input id="solt" type="radio" value="1" name="estatus">
                         <label for="solt">Casado</label>
                     </div>
                 </div>
             </div>
 
             <div class="continue-button">
-                <button class="button"><a href="index.php">voltar</a></button>
+                <button class="button"><a href="../index.php">voltar</a></button>
             </div>
         </form>
     </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>cadastro</title>
  
 </head>
@@ -26,10 +26,6 @@
             </div>
 
             <div class="input-group">
-                <div class="input-box">
-                    <label for="">id disciplina</label>
-                    <input id="firstname" type="number" name="iddisciplina" placeholder="Digite o id da disciplina" required>
-                </div>
 
                 <div class="input-box">
                     <label for="">disciplina</label>
@@ -51,6 +47,15 @@
                      <input type="text" name="idprofessor" placeholder="id do professor" required>
                 </div>
 
+                <div class="input-box">
+                     <label for="">Nota 01</label>
+                     <input type="text" name="nota1" placeholder="Insira a Nota 01" required>
+                </div>
+
+                <div class="input-box">
+                     <label for="">Nota 02</label>
+                     <input type="text" name="nota2" placeholder="Insira a Nota 02" required>
+                </div>
                 
 
             </div>
@@ -58,7 +63,7 @@
             </div>
 
             <div class="continue-button">
-                <button class="button"><a href="index.php">voltar</a></button>
+                <button class="button"><a href="../index.php">voltar</a></button>
             </div>
         </form>
     </div>

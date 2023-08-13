@@ -14,7 +14,7 @@
 
 <?php
 ##permite acesso as variaves dentro do aquivo conexao
-require_once('conexao.php');
+require_once('../conexao.php');
 
 
 
@@ -25,12 +25,12 @@ if (isset($_GET['cadastrar'])) {
     $idade = $_GET["idade"];
     $datanascimento = $_GET["datanascimento"];
     $endereco = $_GET["endereco"];
-   
+    $estatus = $_GET["estatus"];
 
 
     ##codigo SQL
-    $sql = "INSERT INTO aluno(nome,idade,datanascimento,endereco) 
-                VALUES('$nome','$idade','$datanascimento','$endereco')";
+    $sql = "INSERT INTO aluno(nome,idade,datanascimento,endereco, estatus) 
+                VALUES('$nome','$idade','$datanascimento','$endereco', '$estatus')";
 
     ##junta o codigo sql a conexao do banco
     $sqlcombanco = $conexao->prepare($sql);
@@ -39,22 +39,24 @@ if (isset($_GET['cadastrar'])) {
     if ($sqlcombanco->execute()) {
         echo " <strong>OK!</strong> o aluno
                 $nome foi Incluido com sucesso!!!";
-        echo " <button class='button'><a href='index.php'>voltar</a></button>";
+        echo " <button class='button'><a href='../index.php'>voltar</a></button>";
     }
 }
 #######alterar
 if (isset($_POST['update'])) {
 
     ##dados recebidos pelo metodo POST
+    $id = $_POST["id"];
     $nome = $_POST["nome"];
     $idade = $_POST["idade"];
     $datanascimento = $_POST["datanascimento"];
     $endereco = $_POST["endereco"];
+    $estatus = $_POST["estatus"];
     
 
 
     ##codigo sql
-    $sql = "UPDATE  aluno SET nome= :nome, idade= :idade, datanascimento= :datanascimento, endereco= :endereco WHERE id= :id ";
+    $sql = "UPDATE  aluno SET nome= :nome, idade= :idade, datanascimento= :datanascimento, endereco= :endereco, estatus = :estatus WHERE id= :id ";
 
     ##junta o codigo sql a conexao do banco
     $stmt = $conexao->prepare($sql);
@@ -76,7 +78,7 @@ if (isset($_POST['update'])) {
         echo " <strong>OK!</strong> o aluno
              $nome foi Alterado com sucesso!!!";
 
-        echo " <button class='button'><a href='index.php'>voltar</a></button>";
+        echo " <button class='button'><a href='listaalunos.php'>voltar</a></button>";
     }
 }
 

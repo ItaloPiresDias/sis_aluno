@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>cadastro</title>
- 
 </head>
 
 <body>
@@ -47,9 +46,14 @@
                      <input type="text" name=" endereco" placeholder="Digite seu endereço" required>
                 </div>
 
-            
-               
-             
+                <div class="input-box">
+                     <label for="">STATUS</label>
+                     <select name="estatus" id="">
+                        <option value="AP">APROVADO</option>
+                        <option value="REP">REPROVADO</option>
+                        <option value="DES">DESATIVO</option>
+                     </select>
+                </div>
 
             </div>
            
@@ -57,7 +61,7 @@
             </div>
 
             <div class="continue-button">
-                <button class="button"><a href="index.php">voltar</a></button>
+                <button class="button"><a href="../index.php">voltar</a></button>
             </div>
         </form>
     </div>

@@ -20,28 +20,28 @@
                         <h1>Cadastre-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="cadaluno.php">cadastrar aluno</a></button>
+                        <button><a href="aluno/cadaluno.php">cadastrar aluno</a></button>
                     </div>
 
                     <div class="login-button">
-                        <button><a href="cadprofessor.php">cadastrar professor</a></button>
+                        <button><a href="professor/cadprofessor.php">cadastrar professor</a></button>
                     </div>
 
                     <div class="login-button">
-                        <button><a href="caddisciplina.php">cadastrar disciplina</a></button>
+                        <button><a href="disciplina/caddisciplina.php">cadastrar disciplina</a></button>
                         
                     </div>
                 </div>
 
                
                 <div class="continue-button">
-                    <button><a href="listaalunos.php">lista alunos</a></button>
+                    <button><a href="aluno/listaalunos.php">lista alunos</a></button>
                 </div>
                 <div class="continue-button">
-                    <button><a href="listaprofessores.php">lista professores</a></button>
+                    <button><a href="professor/listaprofessores.php">lista professores</a></button>
                 </div>
                 <div class="continue-button">
-                    <button><a href="listadisciplina.php">lista disciplinas</a></button>
+                    <button><a href="disciplina/listadisciplina.php">lista disciplinas</a></button>
                 </div>
 
                 <div id="atv" class="continue-button">

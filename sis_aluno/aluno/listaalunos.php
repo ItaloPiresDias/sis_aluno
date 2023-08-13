@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="../style3.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
  * Melhor prática usando Prepared Statements
  * 
  */
-require_once('conexao.php');
+require_once('../conexao.php');
 
 $retorno = $conexao->prepare('SELECT * FROM aluno');
 $retorno->execute();
@@ -81,7 +81,7 @@ $retorno->execute();
 
 <div class="voltar">
 <?php
-echo "<button class='button button3'><a href='index.php'>  voltar</a></button>";
+echo "<button class='button button3'><a href='../index.php'>  voltar</a></button>";
 
 ?>
 </div>
